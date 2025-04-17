@@ -310,7 +310,21 @@
                 <directory>${project.basedir}/src/test/resources</directory>
             </testResource>
         </testResources>
+        
         <plugins>
+
+            <plugin>
+            <groupId>org.opoo.maven</groupId>
+            <artifactId>tomcat9-maven-plugin</artifactId>
+            <version>3.0.1</version>
+            <configuration>
+                <url>http://localhost:8080/manager/text</url>
+                <server>Tomcat9</server>
+                <username>tomcat</username>
+                <password>mypassword123</password>
+                <path>/petclinic</path>
+            </configuration>
+            </plugin>            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
