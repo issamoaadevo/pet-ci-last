@@ -5,14 +5,12 @@ stages:
 build-petclinic:
   stage: build
   script:
-    - echo "🔧 Building Petclinic with Maven..."
+    - echo "Building Petclinic with Maven"
     - mvn clean package
 
 deploy-to-tomcat:
   stage: deploy
   script:
-    - echo "🚀 Deploying to Tomcat..."
+    - echo "Deploying to Tomcat"
     - mvn tomcat9:deploy
-    - echo "✅ Done deploying"
-  environment: production
-
+    - echo "Done deploying"
