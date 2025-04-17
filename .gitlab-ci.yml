@@ -12,6 +12,6 @@ deploy-to-tomcat:
   stage: deploy
   script:
     - echo "Deploying to Tomcat"
-    - systemctl start tomcat
+    - sudo systemctl start tomcat
     - mvn tomcat9:deploy
     - echo "Done deploying"
