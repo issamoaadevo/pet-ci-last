@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "fedora",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus2.actions.githubusercontent.com/LV2zH3UCnu2PzsbUWSNOX6JUFmtKzmITb3rSsF2c8m6e5izJ2z/",
+  "gitHubUrl": "https://github.com/issamoaadevo/pet-ci-last",
+  "workFolder": "_work"
+}
