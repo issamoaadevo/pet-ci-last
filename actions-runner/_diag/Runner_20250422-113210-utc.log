@@ -121,3 +121,4 @@
 [2025-04-22 11:32:12Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
 [2025-04-22 11:32:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/issam/devoteam/last-test/gitlab-ci-project-2/actions-runner/.credentials_rsaparams
 [2025-04-22 11:32:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-22 12:02:23Z INFO MessageListener] No message retrieved from session '8eb78b92-1731-4814-8aaa-21587c2caf61' within last 30 minutes.
