@@ -1,4 +1,4 @@
-name: Build and Deploy petclinic
+name: Build and Deploy Petclinic
 
 on:
   push:
@@ -7,32 +7,37 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-
     steps:
-      - name: Check-out code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: test if everything is good to go
-        run: mvn --version
-        run: java --version
-        run: curl localhost:8080
+      - name: Test
+        run: |
+          echo "Checking Maven version:"
+          mvn --version
+          echo "Checking Java version:"
+          java --version
+          echo "Checking if Tomcat is running:"
+          curl -I localhost:8080
 
   build:
     runs-on: self-hosted
-
+    needs: test
     steps:
-      - name: Check-out code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: build with Maven
-        run: echo "Building maven package"
-        run: mvn clean package
+      - name: Build with Maven
+        run: |
+          echo "Building the Maven package."
+          mvn clean package
 
   deploy:
     runs-on: self-hosted
-
+    needs: build
     steps:
-      - name: deploy to tomcat
-        run: echo "Deploying war to Tomcat"
-        run: mvn tomcat9:deploy
+      - name: Deploy to tomcat
+        run: |
+          mvn deploy9:tomcat
+
 
