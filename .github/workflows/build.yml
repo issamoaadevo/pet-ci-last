@@ -34,5 +34,5 @@ jobs:
     steps:
       - name: deploy to tomcat
         run: echo "Deploying war to Tomcat"
-        run: systemctl tomcat start
+        run: mvn tomcat9:deploy
 
