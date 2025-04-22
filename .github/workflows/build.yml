@@ -38,6 +38,6 @@ jobs:
     steps:
       - name: Deploy to tomcat
         run: |
-          mvn deploy9:tomcat
+          mvn tomcat9:deploy
 
 
