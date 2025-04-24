@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "issamoaadevo/pet-ci-last",
+  "pipelineDirectory": "pet-ci-last",
+  "workspaceDirectory": "pet-ci-last/pet-ci-last",
+  "repositories": {
+    "issamoaadevo/pet-ci-last": {
+      "repositoryPath": "pet-ci-last/pet-ci-last",
+      "lastRunOn": "04/22/2025 14:36:51 +02:00"
+    }
+  },
+  "lastRunOn": "04/22/2025 14:40:24 +02:00"
+}

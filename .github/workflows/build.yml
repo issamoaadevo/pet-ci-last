@@ -37,7 +37,6 @@ jobs:
     needs: build
     steps:
       - name: Deploy to tomcat
-        run: |
-          mvn tomcat9:deploy
+        run: mvn tomcat9:deploy
 
 
